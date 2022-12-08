@@ -114,3 +114,25 @@ img {
     object-fit: cover;
 }
 /* end of general classes  */
+
+ /* media queries for medium devices (tablets) */
+ @media screen and (max-width: 1024px) {
+    .container{
+        width: var(--container-width-md);
+    }
+    
+    section {
+        margin-top: 6rem;
+    }
+ }
+
+/* media queries for small devices (cell phones) */
+@media screen and (max-width: 600px) {
+    .container{
+        width: var(--container-width-sm);
+    }
+    
+    section > h2 {
+        margin-bottom: 2rem;
+    }
+ }
