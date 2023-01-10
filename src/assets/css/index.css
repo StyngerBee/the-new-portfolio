@@ -59,8 +59,7 @@ h1 {
 }
 
 section {
-    margin-top: 8rem;
-    height: 100vh;
+    margin: 5% 0;
 }
 
 section > h2,
@@ -114,6 +113,8 @@ img {
     width: 100%;
     object-fit: cover;
 }
+ 
+
 /* end of general classes  */
 
  /* media queries for medium devices (tablets) */
