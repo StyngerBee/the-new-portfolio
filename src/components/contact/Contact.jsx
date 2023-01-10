@@ -2,7 +2,6 @@ import React, {useRef} from 'react'
 import './contact.css'
 import {MdOutlineEmail} from "react-icons/md";
 import {RiMessengerLine} from "react-icons/ri";
-import {IoLogoWhatsapp} from "react-icons/io";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
@@ -24,7 +23,7 @@ const Contact = () => {
 
     return (
         <section id={"contact"}>
-            <h5>Get in Touch</h5>
+            
             <h2>Contact</h2>
 
             <div className={"container contact__container"}>
@@ -32,21 +31,16 @@ const Contact = () => {
                     <article className={"contact__option"}>
                         <MdOutlineEmail className={"contact__option-icon"}/>
                         <h4>Email</h4>
-                        <h5>dummyanuj@gmail.com</h5>
-                        <a href={"mailto:saraogi.anuj9@gmail.com"} target={'_blank'} >Send a Message</a>
+                        <h5>cdsonics@yahoo.com</h5>
+                        <a href={"mailto:cdsonics@yahoo.com"} target={'_blank'} >Send an Email</a>
                     </article>
                     <article className={"contact__option"}>
                         <RiMessengerLine className={"contact__option-icon"}/>
-                        <h4>Messenger</h4>
-                        <h5>anujtutorials</h5>
-                        <a href={"https://m.me/ernest.achiever"} target={'_blank'} >Send a Message</a>
+                        <h4>Text</h4>
+                        <h5>(904) 540-7706</h5>
+                        <a href={"tel:+9045407706"} target={'_blank'} >Send a Text</a>
                     </article>
-                    <article className={"contact__option"}>
-                        <IoLogoWhatsapp className={"contact__option-icon"}/>
-                        <h4>Whatsapp</h4>
-                        <h5>+91 7898583987</h5>
-                        <a href={"https://api.whatsapp.com/phone=+917898583987"} target={'_blank'} >Send a Message</a>
-                    </article>
+                    
                 </div>
                 <form ref={form} onSubmit={sendEmail}>
                     <input type={"text"} name={"name"} placeholder={"Your Full name"} required/>
